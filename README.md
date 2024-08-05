@@ -45,6 +45,4 @@ This project is a web application that allows users to search for pets, view the
 3. Set up ESLint and Prettier:
    ```bash
    npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
-4. Configure ESLint and Prettier by creating .eslintrc.js and .prettierrc files.
-   Configure Vite
-Ensure your vite.config.js is properly set up to handle JSX files:
+
