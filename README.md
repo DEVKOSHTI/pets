@@ -38,3 +38,12 @@ This project is a web application that allows users to search for pets, view the
    ```bash
    npm create vite@latest pets --template react
    cd pets
+2. Install necessary dependencies:
+   ```bash
+   npm install
+   npm install react-router-dom axios
+3. Set up ESLint and Prettier:
+   ```bash
+   npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+4. Configure ESLint and Prettier by creating .eslintrc.js and .prettierrc files.
+   
