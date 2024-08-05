@@ -1,48 +1,67 @@
-# Pet Listing Website
+Pet Listing Website
+A React.js-based Pet Listing website with error handling, state management, ESLint, and Vite.
 
-A Pet Listing website built using React.js that incorporates error handling and state management, following best coding practices, including the use of ESLint and Vite.
+Features
+List pets with details
+Search pets by animal type, location, and breed
+Error handling and loading states
+Responsive design
+Project Setup
+Initialize Project
 
-## Table of Contents
+Create a new Vite project with React template.
+Navigate to the project directory.
+Install necessary dependencies.
+Set Up ESLint and Prettier
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Project Setup](#project-setup)
-- [Project Structure](#project-structure)
-- [APIs Used](#apis-used)
-- [State Management](#state-management)
-- [Error Handling](#error-handling)
-- [Routing](#routing)
-- [Fetching Data](#fetching-data)
-- [Best Coding Practices](#best-coding-practices)
-- [How to Run](#how-to-run)
-- [Design Decisions](#design-decisions)
-- [Contributing](#contributing)
-- [License](#license)
+Install ESLint, Prettier, and related plugins.
+Vite Configuration
 
-## Introduction
-
-This project is a web application that allows users to search for pets, view their details, and browse through different breeds. It uses React.js for the frontend, Vite for bundling, and follows best coding practices with ESLint and Prettier.
-
-## Features
-
-- List pets with details
-- Search pets by animal type, location, and breed
-- Error handling and loading states
-- Responsive design
-
-## Project Setup
-
-### Initialize the Project
-
-1. Create a new React project using Vite:
-   ```bash
-   npm create vite@latest pets --template react
-   cd pets
-2. Install necessary dependencies:
-   ```bash
-   npm install
-   npm install react-router-dom axios
-3. Set up ESLint and Prettier:
-   ```bash
-   npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
-
+Configure Vite in vite.config.js with React plugin.
+Project Structure
+```bash
+pets/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ErrorBoundary.jsx
+│   │   ├── PetDetails.jsx
+│   │   ├── PetList.jsx
+│   │   └── SearchForm.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── PetDetailsPage.jsx
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .eslintrc.js
+├── .prettierrc
+├── package.json
+└── vite.config.js
+APIs Used
+List of Pets: http://pets-v2.dev-apis.com/pets
+Pets by ID: http://pets-v2.dev-apis.com/pets?id=${id}
+Breed by Animal Type: http://pets-v2.dev-apis.com/breeds?animal=${animal}
+Search API: http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}
+State Management
+Used useState, useEffect, and useContext hooks.
+No global state management library used for simplicity.
+Error Handling
+ErrorBoundary component for catching errors.
+Error handling in API calls.
+Routing
+Used react-router-dom for navigation.
+Fetching Data
+Service layer in services/api.js for API calls using axios.
+Loading and error states implemented.
+How to Run
+Clone the repository.
+Navigate to the project directory.
+Install dependencies.
+Start the development server.
+Open your browser and navigate to http://localhost:3000.
+Contributing
+Contributions are welcome! Please submit a Pull Request.
