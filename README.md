@@ -19,7 +19,7 @@ Vite Configuration
 
 Configure Vite in vite.config.js with React plugin.
 Project Structure
-```bash
+  ```bash
 pets/
 ├── public/
 │   └── index.html
@@ -41,6 +41,8 @@ pets/
 ├── .prettierrc
 ├── package.json
 └── vite.config.js
+
+
 APIs Used
 List of Pets: http://pets-v2.dev-apis.com/pets
 Pets by ID: http://pets-v2.dev-apis.com/pets?id=${id}
