@@ -1,8 +1,7 @@
 // src/services/api.js
 import axios from "axios";
 
-const API_BASE_URL =
-  import.meta.env.REACT_APP_API_BASE_URL || "http://pets-v2.dev-apis.com";
+const API_BASE_URL = "http://pets-v2.dev-apis.com";
 
 const handleApiError = (error) => {
   console.error("API Error:", error);
